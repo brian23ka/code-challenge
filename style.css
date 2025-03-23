@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #0073e6;
+  }
+  
+  /* Layout */
+  #app-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  #movie-menu {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #movie-details {
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Movie List Styles */
+  ul#films {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul#films li {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  ul#films li:hover {
+    background-color: #c0c0c0;
+  }
+  
+  ul#films li.sold-out {
+    background-color: #f1c1c1;
+    text-decoration: line-through;
+    color: #b5b5b5;
+  }
+  
+  /* Movie Details Styles */
+  #movie-info {
+    text-align: center;
+  }
+  
+  #movie-poster {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #movie-title {
+    font-size: 2em;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  #movie-description {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  #movie-runtime, #movie-showtime {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  #available-tickets {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #d9534f;
+    cursor: not-allowed;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  

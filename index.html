@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatadango - Movie Theater</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    <header>
+      <h1>Flatadango - Movie Theater</h1>
+    </header>
+
+    <main>
+      <!-- Left Side: Movie Menu -->
+      <section id="movie-menu">
+        <h2>Available Movies</h2>
+        <ul id="films">
+          <!-- Movie items will be added dynamically here -->
+        </ul>
+      </section>
+
+      <!-- Right Side: Movie Details -->
+      <section id="movie-details">
+        <h2>Movie Details</h2>
+        <div id="movie-info">
+          <img id="movie-poster" src="" alt="Movie Poster">
+          <h3 id="movie-title">Select a Movie</h3>
+          <p id="movie-description"></p>
+          <p id="movie-runtime">Runtime: <span></span></p>
+          <p id="movie-showtime">Showtime: <span></span></p>
+          <p>Available Tickets: <span id="available-tickets"></span></p>
+        </div>
+
+        <!-- Buy Ticket Button -->
+        <button id="buy-ticket-btn" onclick="buyTicket(1)" disabled>Buy Ticket</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Flatadango. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Add your JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
