@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flatadango - Movie Theater</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatdango - Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--<body> -->
-
-    <header>
-      <h1>Flatadango - Movie Theater</h1>
-    </header>
- <section id="app-container">
-
-    <main>
-      <!-- Left Side: Movie Menu -->
-      <div id="movie-menu">
-        <h2>Available Movies</h2>
-        <ul id="films" >
-          <!-- Movie items will be added dynamically here -->
-        </ul>
-      </div>
-
-      <!-- Right Side: Movie Details -->
-      <div id="movie-details">
-        <h2>Movie Details</h2>
-        <div id="movie-info">
-          <img id="movie-poster" src="" alt="Movie Poster">
-          <h3 id="movie-title">Select a Movie</h3>
-          <p id="movie-description"></p>
-          <p id="movie-runtime">Runtime: <span></span></p>
-          <p id="movie-showtime">Showtime: <span></span></p>
-          <p>Available Tickets: <span id="available-tickets"></span></p>
+<body>
+    <div class="container">
+        <!-- Movie List -->
+        <div class="movie-list">
+            <h2>Movies</h2>
+            <ul id="films">
+                <!-- Movies will be populated here dynamically -->
+            </ul>
         </div>
-
-        <!-- Buy Ticket Button -->
-        <button id="buy-ticket-btn" onclick="buyTicket(1)" disabled>Buy Ticket</button>
-      </div>
-    </main>
-
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 Flatadango. All Rights Reserved.</p>
-  </footer>
-  
-  <!-- Add your JavaScript file -->
-  <script src="script.js"></script>
+        
+        <!-- Movie Details -->
+        <div class="movie-details">
+            <h2 id="movie-title">Movie Title</h2>
+            <img id="movie-poster" src="" alt="Movie Poster">
+            <div class="movie-info">
+                <p><strong>Runtime:</strong> <span id="movie-runtime"></span> minutes</p>
+                <p><strong>Showtime:</strong> <span id="movie-showtime"></span></p>
+                <p><strong>Available Tickets:</strong> <span id="movie-tickets"></span></p>
+                <form>
+                <button type="button" id="buy-ticket">Buy Ticket</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
