@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const movieRuntime = document.getElementById("movie-runtime");
     const movieShowtime = document.getElementById("movie-showtime");
     const movieTickets = document.getElementById("movie-tickets");
+    const movieDescription = document.getElementById("movie-description");
     const buyTicketBtn = document.getElementById("buy-ticket");
 
     const baseUrl = "http://localhost:3000/films";
@@ -51,6 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
         moviePoster.src = movie.poster;
         movieRuntime.textContent = movie.runtime;
         movieShowtime.textContent = movie.showtime;
+        movieTickets.textContent = movie.capacity - movie.tickets_sold;
+        movieDescription.textContent = movie.description;
         updateTickets(movie);
         
         buyTicketBtn.onclick = (event) => {
